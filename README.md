@@ -12,30 +12,16 @@ A production-ready dual application featuring:
 
 ---
 
-## 🌟 Key Features
-
-### A. SynapseX Landing Site
-- **Mouse Video Scrubbing**: Horizontal mouse movement scrubs the Hero video timeline with real-time progress indicators.
-- **Matrix Scramble Typography**: `ScrambleIn` title entrance animations and hover-driven `ScrambleText`.
-- **3D Perspective Scroll Physics**: Section 2 text tilts on a 3D perspective plane based on scroll position.
-- **5 CloudFront Video Backgrounds**: High-definition neural video loops for all page sections.
-- **Responsive Expanding Navbar**: Capsule pill expansion (`48px` to `380px`) with spring physics.
-
-### B. Mini SOC Operations Center
-- **Three.js WebGL 3D Earth Globe**: Interactive 360° mouse drag rotation, atmospheric aura glow, and spatial curved 3D attack trajectories.
-- **Hybrid AI Anomaly Engine**: `IsolationForest` Machine Learning model + Heuristic triggers evaluating Packets Per Second (PPS), Byte Rate (BPS), TCP flag ratios, and IP entropy over 2.0s sliding windows.
-- **IP Geolocation Mapping**: Resolves attacker IPs to Country, City, and Lat/Long coordinates.
-- **Automated Active Defense**: Null-routes malicious IPs via system firewall scripts (`iptables` / `netsh`) with auto-decay expiration timers.
-- **Live Attack Simulator**: Command-line and UI buttons to simulate SYN floods, UDP amplification, ICMP ping sweeps, and brute-force scans.
-
----
-
 ## 📁 Repository Directory Structure
 
 ```
 synapsex-soc/
-├── .gitignore                   # Defines files excluded from version control
+├── .github/                     # GitHub Actions auto-deployment workflow
+│   └── workflows/
+│       └── deploy.yml
+├── .gitignore                   # Files excluded from version control
 ├── README.md                    # Project documentation
+├── vercel.json                  # Optional Vercel deployment configuration
 │
 ├── frontend/                    # Complete React + TypeScript + Vite + Tailwind + Three.js App
 │   ├── package.json

@@ -1,5 +1,4 @@
 {
-  "framework": "vite",
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "rootDirectory": "frontend",
+  "framework": "vite"
 }
