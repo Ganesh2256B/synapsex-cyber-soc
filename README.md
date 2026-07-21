@@ -12,14 +12,30 @@ A production-ready dual application featuring:
 
 ---
 
-## 📁 Repository Directory Structure
+## 🌟 Key Features
 
-The repository is modularized into decoupled `frontend/` and `backend/` directories:
+### A. SynapseX Landing Site
+- **Mouse Video Scrubbing**: Horizontal mouse movement scrubs the Hero video timeline with real-time progress indicators.
+- **Matrix Scramble Typography**: `ScrambleIn` title entrance animations and hover-driven `ScrambleText`.
+- **3D Perspective Scroll Physics**: Section 2 text tilts on a 3D perspective plane based on scroll position.
+- **5 CloudFront Video Backgrounds**: High-definition neural video loops for all page sections.
+- **Responsive Expanding Navbar**: Capsule pill expansion (`48px` to `380px`) with spring physics.
+
+### B. Mini SOC Operations Center
+- **Three.js WebGL 3D Earth Globe**: Interactive 360° mouse drag rotation, atmospheric aura glow, and spatial curved 3D attack trajectories.
+- **Hybrid AI Anomaly Engine**: `IsolationForest` Machine Learning model + Heuristic triggers evaluating Packets Per Second (PPS), Byte Rate (BPS), TCP flag ratios, and IP entropy over 2.0s sliding windows.
+- **IP Geolocation Mapping**: Resolves attacker IPs to Country, City, and Lat/Long coordinates.
+- **Automated Active Defense**: Null-routes malicious IPs via system firewall scripts (`iptables` / `netsh`) with auto-decay expiration timers.
+- **Live Attack Simulator**: Command-line and UI buttons to simulate SYN floods, UDP amplification, ICMP ping sweeps, and brute-force scans.
+
+---
+
+## 📁 Repository Directory Structure
 
 ```
 synapsex-soc/
-├── .gitignore                   # Defines files to exclude from Git (node_modules, venv, pycache, dist)
-├── README.md                    # Repository documentation and setup guide
+├── .gitignore                   # Defines files excluded from version control
+├── README.md                    # Project documentation
 │
 ├── frontend/                    # Complete React + TypeScript + Vite + Tailwind + Three.js App
 │   ├── package.json
@@ -35,7 +51,7 @@ synapsex-soc/
 │       ├── types.ts
 │       ├── App.tsx
 │       ├── main.tsx
-│       └── components/          # Landing sections, logo, hamburger, 3D Globe, SOC panels
+│       └── components/          # Landing sections, logo, 3D Globe, SOC panels
 │
 └── backend/                     # Complete Python FastAPI + Scikit-Learn ML Backend
     ├── requirements.txt
@@ -51,55 +67,7 @@ synapsex-soc/
 
 ---
 
-## 🐙 How to Upload This Project to GitHub
-
-Follow these steps to initialize and push your repository to GitHub:
-
-### Step 1: Initialize Git Repository
-Open your terminal in the project root folder (`internship_project`):
-```bash
-git init
-```
-
-### Step 2: Add Remote GitHub URL
-Create a new repository on GitHub (name it e.g. `synapsex-cyber-soc`), then link it:
-```bash
-git remote add origin https://github.com/YOUR_USERNAME/synapsex-cyber-soc.git
-```
-
-### Step 3: Stage and Commit Files
-```bash
-git add .
-git commit -m "Initial commit: SynapseX Landing Page & AI Mini SOC System"
-```
-
-### Step 4: Push to GitHub
-```bash
-git branch -M main
-git push -u origin main
-```
-
----
-
-## 🚫 WHAT TO ADD vs WHAT NOT TO ADD TO GITHUB
-
-### ✅ WHAT TO ADD (Commit these files):
-- `frontend/` source folder (`src/`, `public/`, `package.json`, `vite.config.ts`, `tailwind.config.js`, `tsconfig.json`, `index.html`)
-- `backend/` source folder (`app/`, `requirements.txt`, `traffic_simulator.py`)
-- `.gitignore` file
-- `README.md` documentation file
-
-### ❌ WHAT NOT TO ADD (Must be ignored via `.gitignore`):
-- `node_modules/` or `frontend/node_modules/` (Heavy dependency folders; installed via `npm install`)
-- `__pycache__/` or `backend/app/__pycache__/` (Python compiled bytecode)
-- `.venv/` or `venv/` or `env/` (Python virtual environment folders)
-- `dist/` or `build/` (Production build outputs)
-- `.env` or `.env.local` (Environment secret files)
-- `.idea/` or `.vscode/` (IDE settings)
-
----
-
-## ⚡ How to Run Frontend and Backend Separately
+## ⚡ How to Run the Project
 
 ### 1. Run the Frontend (React + Vite + Three.js)
 ```bash
@@ -125,5 +93,5 @@ python backend/traffic_simulator.py --attack udp_spike --duration 15
 
 ---
 
-## 🛡️ License
+## 🛡️ License & Copyright
 Copyright (c) 2026 SynapseX Labs. All rights reserved.
