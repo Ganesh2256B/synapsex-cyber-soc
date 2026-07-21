@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['"Space Mono"', 'monospace'],
         serif: ['"Space Mono"', 'monospace'],
         mono: ['"Space Mono"', 'monospace'],
         anton: ['"Anton SC"', 'sans-serif'],
